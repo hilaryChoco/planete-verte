@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Planète verte</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-info px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-info p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item">
+                            <span class="text-light small" id="date"></span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-info p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://twitter.com/acer_EnR/status/1575140792674537472?s=20&t=w0yKTh89Byl_hz1Eq5vWkA"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.facebook.com/Association-Camerounaise-pour-les-Energies-Renouvelables-ACER-109100690626317/?mibextid=LQQJ4d"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.linkedin.com/in/association-camerounaise-pour-les-energies-renouvelables-057976235"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="acer.cameroun@gmail.com"><small class="fab fa-google-plus-g"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://youtube.com/@panafricangreentv8193"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-between bg-white px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block flex-column ">
+                    <img src="img/logo.jpeg" alt="logo" width="150">
+                </a>
+            </div>
+            <div class="col-lg-6 d-flex flex-row">
+                <nav class="navbar navbar-expand-sm ml-5 p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body font-weight-bold " href="login.html">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body font-weight-bold" href="register.html">Devenir editeur</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control border-1 border-info rounded-start py-4" placeholder="Rechercher">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-info text-white border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-info navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <img src="img/logo.jpeg" alt="logo" width="150">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Accueil</a>
+                    <a href="" class="nav-item nav-link">Actualités</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Catégories</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-item nav-link">A propos</a>
+                   
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid mt-5 pt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Categorie: <span class="category-name text-lowercase"></span></h4>
+                    </div>
+                </div>                 
+                <div class="row display-articles mx-2">                
+                </div>
+            </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="row py-4">
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contactez-nous</h5>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Yaoundé – Cameroun, B.P. 12620</p>
+                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>(237) 677 76 59 41</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>contact@acer-enr.com / acer.cameroun@gmail.com</p>
+                <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://twitter.com/acer_EnR/status/1575140792674537472?s=20&t=w0yKTh89Byl_hz1Eq5vWkA"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.facebook.com/Association-Camerounaise-pour-les-Energies-Renouvelables-ACER-109100690626317/?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.linkedin.com/in/association-camerounaise-pour-les-energies-renouvelables-057976235"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square" href="https://youtube.com/@panafricangreentv8193"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Nouvelles Populaires</h5>
+                <div class="mb-3">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                </div>
+                <div class="mb-3">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                </div>
+                <div class="">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Catégories</h5>
+                <div class="footer-category m-n1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; Copyright 2022 <span class="text-info font-weight-bold">Planète verte infos.</span> Tous droits réservés.
+			Design by <span class="text-info font-weight-bold">ABC DIGITAL</span></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        var hours = n.getHours() + ":" + n.getMinutes() + ":" + n.getSeconds();
+        document.getElementById("date").innerHTML = "Le "+ d + " - " + m + " - " + y + " à " + hours;
+
+        // Get all categories and display them
+        const menuChild = document.querySelector('.dropdown-menu')
+        const footerCategory = document.querySelector('.footer-category')
+        const articles = document.querySelector('.display-articles')
+        var params = window.location.search;
+        const urlParams = new URLSearchParams(params)
+        const categoryId = urlParams.get('catId')
+        const categoryName = urlParams.get('catname')
+        document.querySelector('.category-name').innerHTML = categoryName
+
+        window.onload=function(){
+            getAllCategories()
+            getAllArticles()
+        }
+
+        function getAllArticles(){
+            fetch(`http://localhost:8080/articles/cat/${categoryId}`)
+            .then(res => res.json())
+            .then(data => {
+                data.forEach(element => {
+                    displayArticleHTML(element)
+                });
+            })
+        }
+
+    const displayArticleHTML=(obj)=>{
+        const content = (obj.content).slice(0,60)
+        const date = (obj.createdAt).slice(0,10)
+       str = articles.innerHTML
+       str +=`
+       <div class="col-lg-4">
+            <div class="position-relative mb-3">
+                <img class="img-fluid w-100" src="${obj.image}" style="object-fit: cover;">
+                <div class="bg-white border border-top-0 p-4">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
+                        >${obj.category.cat_name}</a>
+                        <a class="text-body"><small>${date}</small></a>
+                    </div>
+                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="single.html?id=${obj.id}">${obj.title}</a>
+                    <p class="m-0">${content}...</p>
+                </div>
+                <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25" alt="">
+                        <small>John Doe</small>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3"><i class="far fa-eye mr-2"></i>12345</small>
+                        <small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+       `
+       articles.innerHTML = str
+    }   
+
+        function getAllCategories(){
+            fetch('http://localhost:8080/categories')
+            .then(res => res.json())
+            .then(data => {
+                data.forEach(element => {
+                    displayCategoryHTML(element)
+                    displayFooterCategory(element)
+                });
+            })
+        }
+
+        const displayCategoryHTML=(obj)=>{
+            str = menuChild.innerHTML
+            str +=`
+            <a href="category.html?catId=${obj.id}&catname=${obj.cat_name}" class="dropdown-item">${obj.cat_name}</a>
+            `
+            menuChild.innerHTML = str
+        }
+
+        const displayFooterCategory=(obj)=>{
+            str1 = footerCategory.innerHTML
+            str1 +=`
+            <a href="" class="btn btn-sm btn-secondary m-1">${obj.cat_name}</a>
+            `
+            footerCategory.innerHTML = str1
+        }
+    </script>
+</body>
+
+</html>

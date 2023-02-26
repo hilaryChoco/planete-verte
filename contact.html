@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Planète verte</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-info px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-info p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item">
+                            <span class="text-light small" id="date"></span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-info p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://twitter.com/acer_EnR/status/1575140792674537472?s=20&t=w0yKTh89Byl_hz1Eq5vWkA"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.facebook.com/Association-Camerounaise-pour-les-Energies-Renouvelables-ACER-109100690626317/?mibextid=LQQJ4d"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.linkedin.com/in/association-camerounaise-pour-les-energies-renouvelables-057976235"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#"><small class="fab fa-google-plus-g"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://youtube.com/@panafricangreentv8193"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-between bg-white px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <img src="img/logo.jpeg" alt="logo" width="150">
+                </a>
+            </div>
+            <div class="col-lg-6 d-flex flex-row">
+                <nav class="navbar navbar-expand-sm ml-5 p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body font-weight-bold " href="login.html">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body font-weight-bold" href="register.html">Devenir editeur</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control border-1 border-info rounded-start py-4" placeholder="Rechercher">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-info text-white border-0 px-3"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-info navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <img src="img/logo.jpeg" alt="logo" width="150">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Accueil</a>
+                    <a href="" class="nav-item nav-link">Actualités</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Catégories</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-item nav-link">A propos</a>
+                   
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title mb-0">
+                        <h4 class="m-0 text-uppercase font-weight-bold">Contactez-nous pour toute requête</h4>
+                    </div>
+                    <div class="bg-white border border-top-0 p-4 mb-3">
+                        <div class="mb-4">
+							<div class="mb-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-map-marker-alt text-primary mr-2"></i>
+                                    <h6 class="font-weight-bold mb-0">Localisation</h6>
+                                </div>
+                                <p class="m-0">Yaoundé, Cameroun</p>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-envelope-open text-primary mr-2"></i>
+                                    <h6 class="font-weight-bold mb-0">Adresse e-mail</h6>
+                                </div>
+                                <p class="m-0">info@example.com</p>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-phone-alt text-primary mr-2"></i>
+                                    <h6 class="font-weight-bold mb-0">Téléphone</h6>
+                                </div>
+                                <p class="m-0">+012 345 6789</p>
+                            </div>
+                        </div>
+                        <h6 class="text-uppercase font-weight-bold mb-3">Contact</h6>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control p-4" placeholder="Votre Nom" required="required"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control p-4" placeholder="Votre Email" required="required"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" placeholder="Objet" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"
+                                    type="submit">Envoyer Le Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- Social Follow Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Suivez Nous</h4>
+                        </div>
+                        <div class="bg-white border border-top-0 p-3">
+                            <a href="https://www.facebook.com/Association-Camerounaise-pour-les-Energies-Renouvelables-ACER-109100690626317/?mibextid=LQQJ4d" class="facebook-data d-block w-100 text-white text-decoration-none mb-3" style="background: #39569E;">
+                                <i class="fab fa-facebook-f text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            </a>
+                            <a href="https://twitter.com/acer_EnR/status/1575140792674537472?s=20&t=w0yKTh89Byl_hz1Eq5vWkA" class="twitter-data d-block w-100 text-white text-decoration-none mb-3" style="background: #52AAF4;">
+                                <i class="fab fa-twitter text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/association-camerounaise-pour-les-energies-renouvelables-057976235" class="linkedin-data d-block w-100 text-white text-decoration-none mb-3" style="background: #0185AE;">
+                                <i class="fab fa-linkedin-in text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            </a>
+                            <a href="https://youtube.com/@panafricangreentv8193" class="youtube-data d-block w-100 text-white text-decoration-none mb-3" style="background: #DC472E;">
+                                <i class="fab fa-youtube text-center py-4 mr-3" style="width: 65px; background: rgba(0, 0, 0, .2);"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Social Follow End -->
+
+                    <!-- Newsletter Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h4 class="m-0 text-uppercase font-weight-bold">Newsletter</h4>
+                        </div>
+                        <div class="bg-white text-center border border-top-0 p-3">
+                            <p>Veuillez enregistrer votre adresse email pour recevoir nos derniers articles.</p>
+                            <div class="input-group mb-2" style="width: 100%;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Votre Email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary font-weight-bold px-3">Enregistrer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Newsletter End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+        <div class="row py-4">
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Contactez-nous</h5>
+                <p class="font-weight-medium"><i class="fa fa-map-marker-alt mr-2"></i>Yaoundé – Cameroun, B.P. 12620</p>
+                <p class="font-weight-medium"><i class="fa fa-phone-alt mr-2"></i>(237) 677 76 59 41</p>
+                <p class="font-weight-medium"><i class="fa fa-envelope mr-2"></i>contact@acer-enr.com / acer.cameroun@gmail.com</p>
+                <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://twitter.com/acer_EnR/status/1575140792674537472?s=20&t=w0yKTh89Byl_hz1Eq5vWkA"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.facebook.com/Association-Camerounaise-pour-les-Energies-Renouvelables-ACER-109100690626317/?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square mr-2" href="https://www.linkedin.com/in/association-camerounaise-pour-les-energies-renouvelables-057976235"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-secondary btn-lg-square" href="https://youtube.com/@panafricangreentv8193"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Articles Populaires</h5>
+                <div class="mb-3">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                </div>
+                <div class="mb-3">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                </div>
+                <div class="">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Business</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="small text-body text-uppercase font-weight-medium" href="">Lorem ipsum dolor sit amet elit. Proin vitae porta diam...</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <h5 class="mb-4 text-white text-uppercase font-weight-bold">Catégories</h5>
+                <div class="footer-category m-n1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; Copyright 2022 <span class="text-info font-weight-bold">Planète verte infos.</span> Tous droits réservés.
+			Design by <span class="text-info font-weight-bold">ABC DIGITAL</span></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-info btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        var hours = n.getHours() + ":" + n.getMinutes() + ":" + n.getSeconds();
+        document.getElementById("date").innerHTML = "Le "+ d + " - " + m + " - " + y + " à " + hours;
+
+       // Get all categories and display them
+        const menuChild = document.querySelector('.dropdown-menu')
+        const footerCategory = document.querySelector('.footer-category')
+        const facebook = document.querySelector('.facebook-data')
+        const twitter = document.querySelector('.twitter-data')
+        const linkedin = document.querySelector('.linkedin-data')
+        const youtube = document.querySelector('.youtube-data') 
+
+        window.onload=function(){
+            getAllCategories()
+            getfcbfollowers()
+            gettwtfollowers()
+            getinfollowers()
+            getytbefollowers()
+        }
+
+        function getAllCategories(){
+            fetch('http://localhost:8080/categories')
+            .then(res => res.json())
+            .then(data => {
+                data.forEach(element => {
+                    displayCategoryHTML(element)
+                    displayFooterCategory(element)
+                });
+            })
+        }
+
+        function getfcbfollowers(){
+            fetch('http://localhost:8080/medias/1')
+            .then(res => res.json())
+            .then(data => {
+                    displayFcbFollowers(data)
+            })
+        }
+
+        function gettwtfollowers(){
+            fetch('http://localhost:8080/medias/2')
+            .then(res => res.json())
+            .then(data => {
+                    displayTwtFollowers(data)
+            })
+        }
+
+        function getinfollowers(){
+            fetch('http://localhost:8080/medias/3')
+            .then(res => res.json())
+            .then(data => {
+                    displayInFollowers(data)
+            })
+        }
+
+        function getytbefollowers(){
+            fetch('http://localhost:8080/medias/4')
+            .then(res => res.json())
+            .then(data => {
+                    displayYtbeFollowers(data)
+            })
+        }
+
+        const displayCategoryHTML=(obj)=>{
+            str = menuChild.innerHTML
+            str +=`
+            <a href="category.html?catId=${obj.id}&catname=${obj.cat_name}" class="dropdown-item">${obj.cat_name}</a>
+            `
+            menuChild.innerHTML = str
+        }
+
+        const displayFooterCategory=(obj)=>{
+            str1 = footerCategory.innerHTML
+            str1 +=`
+            <a href="" class="btn btn-sm btn-secondary m-1">${obj.cat_name}</a>
+            `
+            footerCategory.innerHTML = str1
+        }
+
+        const displayFcbFollowers=(obj)=>{
+            str2 = facebook.innerHTML
+            str2 +=`
+                <span class="font-weight-medium ">${obj.followers_nbr} Abonnés</span>
+            `
+            facebook.innerHTML = str2
+        }
+
+        const displayTwtFollowers=(obj)=>{
+            str3 = twitter.innerHTML
+            str3 +=`
+                <span class="font-weight-medium">${obj.followers_nbr} Abonnés</span>
+            `
+            twitter.innerHTML = str3
+        }
+
+        const displayInFollowers=(obj)=>{
+            str4 = linkedin.innerHTML
+            str4 +=`
+                <span class="font-weight-medium">${obj.followers_nbr} Abonnés</span>
+            `
+            linkedin.innerHTML = str4
+        }
+
+        const displayYtbeFollowers=(obj)=>{
+            str5 = youtube.innerHTML
+            str5 +=`
+                <span class="font-weight-medium">${obj.followers_nbr} Abonnés</span>
+            `
+            youtube.innerHTML = str5
+        }
+        
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
